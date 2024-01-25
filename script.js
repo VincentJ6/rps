@@ -43,9 +43,9 @@ function lose(userChoice, computerChoice) {
     computerScore++;
     userScore_span.innerHTML = userScore;
       computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML =  `${covertToWord(userChoice)} ${smallUserWord} loses to ${covertToWord(computerChoice)} ${smallCompWord}, You Lost...`
-    userChoice_div.classList.add('red-glow')
-    setTimeout(() => userChoice_div.classList.remove('red-glow'), 300)
+    result_p.innerHTML =  `${covertToWord(userChoice)} ${smallUserWord} loses to ${covertToWord(computerChoice)} ${smallCompWord}, You Lost...`;
+    userChoice_div.classList.add('red-glow');
+    setTimeout(() => userChoice_div.classList.remove('red-glow'), 300);
 }
 
 
@@ -53,9 +53,9 @@ function draw(userChoice, computerChoice) {
       const smallUserWord ="user".fontsize(3).sub();
       const smallCompWord ="comp".fontsize(3).sub();
       const userChoice_div = document.getElementById(userChoice);
-    result_p.innerHTML =  `${covertToWord(userChoice)} ${smallUserWord} equals ${covertToWord(computerChoice)} ${smallCompWord}, Its a Draw.`
-    userChoice_div.classList.add('gray-glow')
-    setTimeout(() => userChoice_div.classList.remove('gray-glow'), 300)
+    result_p.innerHTML =  `${covertToWord(userChoice)} ${smallUserWord} equals ${covertToWord(computerChoice)} ${smallCompWord}, Its a Draw.`;
+    userChoice_div.classList.add('gray-glow');
+    setTimeout(() => userChoice_div.classList.remove('gray-glow'), 300);
 }
 
 
